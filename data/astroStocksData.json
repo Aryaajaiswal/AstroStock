@@ -1,0 +1,88 @@
+{
+  "stock_predictions": [
+    {
+      "symbol": "AAPL",
+      "company": "Apple Inc.",
+      "prediction": "positive",
+      "confidence": 82,
+      "astro_factor": "Mercury in Virgo boosts tech focus"
+    },
+    {
+      "symbol": "TSLA",
+      "company": "Tesla Inc.",
+      "prediction": "negative",
+      "confidence": 64,
+      "astro_factor": "Mars retrograde impacts innovation"
+    },
+    {
+      "symbol": "AMZN",
+      "company": "Amazon.com Inc.",
+      "prediction": "positive",
+      "confidence": 76,
+      "astro_factor": "Jupiter's expansion energy favors e-commerce"
+    },
+    {
+      "symbol": "GOOGL",
+      "company": "Alphabet Inc.",
+      "prediction": "neutral",
+      "confidence": 59,
+      "astro_factor": "Sun square Neptune clouds digital outlook"
+    },
+    {
+      "symbol": "MSFT",
+      "company": "Microsoft Corp.",
+      "prediction": "positive",
+      "confidence": 88,
+      "astro_factor": "Saturn's discipline favors enterprise solutions"
+    },
+    {
+      "symbol": "NFLX",
+      "company": "Netflix Inc.",
+      "prediction": "negative",
+      "confidence": 61,
+      "astro_factor": "Venus opposition suggests user churn"
+    },
+    {
+      "symbol": "NVDA",
+      "company": "NVIDIA Corp.",
+      "prediction": "positive",
+      "confidence": 91,
+      "astro_factor": "Pluto in Aquarius amplifies AI potential"
+    },
+    {
+      "symbol": "META",
+      "company": "Meta Platforms Inc.",
+      "prediction": "neutral",
+      "confidence": 57,
+      "astro_factor": "Uranus square Mercury indicates communication shifts"
+    },
+    {
+      "symbol": "JPM",
+      "company": "JPMorgan Chase & Co.",
+      "prediction": "positive",
+      "confidence": 74,
+      "astro_factor": "Taurus moon stabilizes finance sector"
+    },
+    {
+      "symbol": "XOM",
+      "company": "Exxon Mobil Corp.",
+      "prediction": "negative",
+      "confidence": 63,
+      "astro_factor": "Lunar eclipse suggests energy volatility"
+    }
+  ],
+  "horoscope_insights": {
+    "Aries": "Take calculated risks today. Focus on short-term trades.",
+    "Taurus": "Trust long-term investments. Real estate and finance favored.",
+    "Gemini": "Double-check market news. Avoid hasty decisions.",
+    "Cancer": "Emotion-driven markets may affect your strategy. Stay rational.",
+    "Leo": "Confidence is high. Use it to make bold stock choices.",
+    "Virgo": "Detail-oriented analysis pays off today. Study charts closely.",
+    "Libra": "Seek balance in portfolio. Diversify your holdings.",
+    "Scorpio": "Intense focus brings clarity. Good day for market research.",
+    "Sagittarius": "Explore new sectors or tech stocks. Be adventurous.",
+    "Capricorn": "Discipline rewards you today. Stick to your investment rules.",
+    "Aquarius": "Innovation drives gains. AI and green energy are promising.",
+    "Pisces": "Intuition guides you well. But confirm with facts."
+  }
+}
