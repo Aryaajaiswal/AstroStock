@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AstroStocks Chart</title>
+  <link rel="stylesheet" href="css\chart.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📊 Astro-Market Insights</h1>
+  </header>
+
+  <main>
+    <section class="chart-section">
+      <h2>Stock Trend Visualization</h2>
+      <canvas id="stockChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="chart-section">
+      <h2>Astrological Energy Chart</h2>
+      <canvas id="zodiacChart" width="400" height="200"></canvas>
+    </section>
+
+    <button onclick="goBack()">← Back to Dashboard</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AstroStocks</p>
+  </footer>
+
+  <script src="js\chart.js"></script>
+</body>
+</html>

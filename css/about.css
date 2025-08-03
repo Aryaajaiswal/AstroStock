@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0f0f1a;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #1c1c2e;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+header h1 {
+  font-size: 2.8rem;
+  color: #e3c4ff;
+  margin-bottom: 0.5rem;
+  font-family: 'Orbitron', sans-serif;
+}
+header p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  font-style: italic;
+}
+
+/* About Section */
+.about-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+.about-section section {
+  margin-bottom: 2.5rem;
+  background: #1f1f33;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  animation: fadeIn 1.5s ease-in-out;
+}
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #e3c4ff;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px dashed #9d72ff;
+  padding-bottom: 5px;
+}
+.about-section p,
+.about-section li {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+.about-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Actions */
+.actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+.actions button {
+  padding: 0.75rem 1.5rem;
+  margin: 10px;
+  background-color: #9d72ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.actions button:hover {
+  background-color: #b794ff;
+}
+
+/* Footer */
+footer {
+  background: #1c1c2e;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #2c2c44;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  .about-section {
+    padding: 2rem 1.5rem;
+  }
+}

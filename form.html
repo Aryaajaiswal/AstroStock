@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AstroStocks - Prediction Form</title>
+  <link rel="stylesheet" href="css\form.css" />
+</head>
+<body>
+  <header>
+    <h1>🔮 AstroStocks</h1>
+    <p>Enter your details to receive a personalized stock prediction</p>
+  </header>
+
+  <main>
+    <form id="predictionForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required />
+
+      <label for="zodiac">Zodiac Sign</label>
+      <select id="zodiac" required>
+        <option value="">-- Select --</option>
+        <option value="Aries">Aries</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Gemini">Gemini</option>
+        <option value="Cancer">Cancer</option>
+        <option value="Leo">Leo</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Libra">Libra</option>
+        <option value="Scorpio">Scorpio</option>
+        <option value="Sagittarius">Sagittarius</option>
+        <option value="Capricorn">Capricorn</option>
+        <option value="Aquarius">Aquarius</option>
+        <option value="Pisces">Pisces</option>
+      </select>
+
+      <label for="stock">Stock Symbol</label>
+      <input type="text" id="stock" required />
+
+      <button type="submit">Get Prediction</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AstroStocks</p>
+  </footer>
+
+  <script src="js\form.js"></script>
+</body>
+</html>
