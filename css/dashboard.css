@@ -1,3 +1,97 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap'); */
+
+/* body, .dashboard-header, .predictions h2, .notes h2, .chart-visual h2, table, th, td, input, textarea, button {
+  font-family: 'Orbitron', 'Roboto', Arial, sans-serif;
+} */
+
+/* Table row hover effect (matching home.html) */
+table tbody tr {
+  transition: background 0.2s, color 0.2s;
+}
+table tbody tr:hover {
+  background: #ede9fe;
+  color: #4b2991;
+}
+
+/* Button hover effect (matching home.html) */
+button {
+  background: linear-gradient(90deg, #7c3aed 0%, #4b2991 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(80, 80, 160, 0.10);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #4b2991 0%, #7c3aed 100%);
+  color: #e0e7ff;
+  transform: translateY(-2px) scale(1.04);
+}
+/* AstroStocks Navbar (matching home/about) */
+.navbar {
+  width: 100vw;
+  background: linear-gradient(90deg, #4b2991 0%, #2a1157 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  box-shadow: 0 2px 12px rgba(80, 80, 160, 0.10);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-family: 'Orbitron', 'Roboto', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover {
+  background: rgba(255,255,255,0.12);
+  color: #e0e7ff;
+  text-decoration: none;
+}
+.dashboard-header {
+  text-align: center;
+  margin-top: 40px;
+}
+.dashboard-header h1 {
+  font-size: 2.8rem;
+  font-family: 'Orbitron', 'Roboto', sans-serif;
+  color: #4b2991;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.dashboard-header p {
+  font-size: 1.5rem;
+  color: #dedbe4;
+  margin-bottom: 1.2rem;
+}
+
+.dashboard-header p {
+  color: #dedbe4;
+  font-size: 1.2rem;
+  margin-bottom: auto;
+}
 * {
   margin: 0;
   padding: 0;

@@ -1,53 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AstroStocks - Prediction Form</title>
-  <link rel="stylesheet" href="css\form.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>🔮 AstroStocks</h1>
-    <p>Enter your details to receive a personalized stock prediction</p>
+  <canvas id="starCanvas"></canvas>
+
+  <header class="navbar">
+    <div class="logo">AstroStocks</div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="form.html">Predict</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <div id="authLink"></div> <!-- 🔁 Login or Logout will appear here -->
+    </nav>
   </header>
 
+  <div class="form-header">
+    <p>Enter your details to receive a personalized stock prediction</p>
+  </div>
+
   <main>
-    <form id="predictionForm">
-      <label for="name">Name</label>
-      <input type="text" id="name" required />
+    <div id="predictContainer">
+      <form id="predictionForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
 
-      <label for="dob">Date of Birth</label>
-      <input type="date" id="dob" required />
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
 
-      <label for="zodiac">Zodiac Sign</label>
-      <select id="zodiac" required>
-        <option value="">-- Select --</option>
-        <option value="Aries">Aries</option>
-        <option value="Taurus">Taurus</option>
-        <option value="Gemini">Gemini</option>
-        <option value="Cancer">Cancer</option>
-        <option value="Leo">Leo</option>
-        <option value="Virgo">Virgo</option>
-        <option value="Libra">Libra</option>
-        <option value="Scorpio">Scorpio</option>
-        <option value="Sagittarius">Sagittarius</option>
-        <option value="Capricorn">Capricorn</option>
-        <option value="Aquarius">Aquarius</option>
-        <option value="Pisces">Pisces</option>
-      </select>
+        <label for="zodiac">Zodiac Sign</label>
+        <select id="zodiac" required>
+          <option value="">-- Select --</option>
+          <option value="Aries">Aries</option>
+          <option value="Taurus">Taurus</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Leo">Leo</option>
+          <option value="Virgo">Virgo</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Sagittarius">Sagittarius</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Pisces">Pisces</option>
+        </select>
 
-      <label for="stock">Stock Symbol</label>
-      <input type="text" id="stock" required />
+        <label for="stock">Stock Symbol</label>
+        <select id="stock" required>
+          <option value="">-- Select Stock Symbol --</option>
+          <option value="AAPL">Apple (AAPL)</option>
+          <option value="GOOGL">Alphabet (GOOGL)</option>
+          <option value="MSFT">Microsoft (MSFT)</option>
+          <option value="TSLA">Tesla (TSLA)</option>
+          <option value="AMZN">Amazon (AMZN)</option>
+          <option value="META">Meta (META)</option>
+          <option value="NFLX">Netflix (NFLX)</option>
+          <option value="NVDA">Nvidia (NVDA)</option>
+          <option value="JPM">JPMorgan Chase (JPM)</option>
+          <option value="DIS">Disney (DIS)</option>
+          <option value="TATASTEEL">Tata Steel (TATASTEEL)</option>
+          <option value="RELIANCE">Reliance (RELIANCE)</option>
+          <option value="INFY">Infosys (INFY)</option>
+          <option value="HDFCBANK">HDFC Bank (HDFCBANK)</option>
+          <option value="ICICIBANK">ICICI Bank (ICICIBANK)</option>
+          <option value="Other">Other</option>
+        </select>
 
-      <button type="submit">Get Prediction</button>
-    </form>
+        <button type="submit">Get Prediction</button>
+      </form>
+
+      <div id="loginRequiredMsg"
+        style="display:none; text-align:center; color:#e57373; font-size:1.3rem; margin-top:2rem;">
+        You must be logged in to access the prediction form.<br>
+        <a href="login.html" style="color:#7c3aed; text-decoration:underline;">Go to Login</a>
+      </div>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 AstroStocks</p>
   </footer>
 
-  <script src="js\form.js"></script>
+  <script src="js/stars.js"></script>
+  <script>
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    const form = document.getElementById('predictionForm');
+    const msg = document.getElementById('loginRequiredMsg');
+    const authLink = document.getElementById('authLink');
+
+    // Show or hide form based on login
+    if (!loggedInUser) {
+      form.style.display = 'none';
+      msg.style.display = 'block';
+      authLink.innerHTML = '<a href="login.html">Login</a>';
+    } else {
+      form.style.display = 'block';
+      msg.style.display = 'none';
+      authLink.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
+    }
+
+    // Logout function
+    function logout() {
+      localStorage.removeItem('loggedInUser');
+      alert('Logged out successfully!');
+      window.location.href = 'login.html';
+    }
+
+    // Form submission logic
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const dob = document.getElementById('dob').value;
+      const zodiac = document.getElementById('zodiac').value;
+      const stock = document.getElementById('stock').value;
+
+      // Store form data in localStorage
+      localStorage.setItem('predictionData', JSON.stringify({
+        name,
+        dob,
+        zodiac,
+        stock
+      }));
+
+      // Redirect to result_page.html
+      window.location.href = 'result_page.html';
+    });
+  </script>
 </body>
+
 </html>

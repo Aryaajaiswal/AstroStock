@@ -1,3 +1,8 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap'); */
+
+/* .navbar, .logo, .nav-links a {
+  font-family: 'Orbitron', 'Roboto', Arial, sans-serif;
+} */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +14,42 @@ body {
   background: #0f0f1a;
   color: #f0f0f0;
   line-height: 1.6;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    color: #e3c4ff;
+}
+.navbar {
+  width: 100vw;
+  background: linear-gradient(90deg, #4b2991 0%, #2a1157 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  box-shadow: 0 2px 12px rgba(80, 80, 160, 0.10);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover {
+  color: #9d72ff;
 }
 
 /* Header */

@@ -38,22 +38,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AstroStocks - Home</title>
-  <link rel="stylesheet" href="css\home.css" />
+  <link rel="stylesheet" href="css/home.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="navbar">
-    <div class="logo">🔮 AstroStocks</div>
+    <div class="logo"> AstroStocks</div>
     <nav class="nav-links">
       <a href="home.html">Home</a>
       <a href="form.html">Predict</a>
       <a href="dashboard.html">Dashboard</a>
       <a href="about.html">About</a>
+      <a href="login.html" id="login-link">Login</a>
+      <a href="#" id="logout-link" style="display:none;">Logout</a>
     </nav>
   </header>
 
@@ -61,14 +65,87 @@
     <div class="hero-text">
       <h1>Welcome to AstroStocks</h1>
       <p>A Fusion of Market Predictions & Astrological Intelligence</p>
-      <p>Get personalized stock insights influenced by zodiac alignments, planetary trends, and data-driven algorithms. AstroStocks helps you make smarter investment decisions with a touch of cosmic intuition.</p>
+      <p>Get personalized stock insights influenced by zodiac alignments, planetary trends, and data-driven algorithms.
+        AstroStocks helps you make smarter investment decisions with a touch of cosmic intuition.</p>
       <a href="form.html" class="btn">🔍 Predict Now</a>
     </div>
     <div class="hero-image">
-      <img src="images\astrostocks-illustration.png" alt="Astrology meets Stock Market">
+      <img src="images/astrostocks-illustration-removebg-preview.png" alt="Astrology meets Stock Market">
     </div>
   </main>
 
+  <!-- 🌟 Zodiac Symbols Section -->
+  <section class="zodiac-cards">
+    <h2 class="zodiac-heading">✨ Explore by Zodiac Signs ✨</h2>
+    <div class="zodiac-grid">
+      <div class="zodiac-row">
+        <div class="zodiac-card" title="Aries: Bold, courageous, and competitive.">
+          <img src="images/images/aries.jpg" alt="Aries" style="width:90px;height:90px;">
+          <span>Aries</span>
+          <div class="zodiac-period">Mar 21 - Apr 19</div>
+        </div>
+        <div class="zodiac-card" title="Taurus: Loyal, patient, and dependable.">
+          <img src="images/images/taurus.png" alt="Taurus" style="width:90px;height:90px;">
+          <span>Taurus</span>
+          <div class="zodiac-period">Apr 20 - May 20</div>
+        </div>
+        <div class="zodiac-card" title="Gemini: Curious, witty, and communicative.">
+          <img src="images/images/gemini.jpg" alt="Gemini" style="width:90px;height:90px;">
+          <span>Gemini</span>
+          <div class="zodiac-period">May 21 - Jun 20</div>
+        </div>
+        <div class="zodiac-card" title="Cancer: Intuitive, emotional, and protective.">
+          <img src="images/images/cancer.jpg" alt="Cancer" style="width:90px;height:90px;">
+          <span>Cancer</span>
+          <div class="zodiac-period">Jun 21 - Jul 22</div>
+        </div>
+        <div class="zodiac-card" title="Leo: Confident, generous, and charismatic.">
+          <img src="images/images/leo.jpg" alt="Leo" style="width:90px;height:90px;">
+          <span>Leo</span>
+          <div class="zodiac-period">Jul 23 - Aug 22</div>
+        </div>
+        <div class="zodiac-card" title="Virgo: Analytical, practical, and hardworking.">
+          <img src="images/images/virgo.jpg" alt="Virgo" style="width:90px;height:90px;">
+          <span>Virgo</span>
+          <div class="zodiac-period">Aug 23 - Sep 22</div>
+        </div>
+      </div>
+      <div class="zodiac-row">
+        <div class="zodiac-card" title="Libra: Diplomatic, fair, and sociable.">
+          <img src="images/images/libra.jpeg" alt="Libra" style="width:90px;height:90px;">
+          <span>Libra</span>
+          <div class="zodiac-period">Sep 23 - Oct 22</div>
+        </div>
+        <div class="zodiac-card" title="Scorpio: Passionate, intense, and mysterious.">
+          <img src="images/images/scorpio.png" alt="Scorpio" style="width:90px;height:90px;">
+          <span>Scorpio</span>
+          <div class="zodiac-period">Oct 23 - Nov 21</div>
+        </div>
+        <div class="zodiac-card" title="Sagittarius: Adventurous, optimistic, and philosophical.">
+          <img src="images/images/sagittarius.jpeg" alt="Sagittarius" style="width:90px;height:90px;">
+          <span>Sagittarius</span>
+          <div class="zodiac-period">Nov 22 - Dec 21</div>
+        </div>
+        <div class="zodiac-card" title="Capricorn: Disciplined, responsible, and ambitious.">
+          <img src="images/images/capricorn.jpeg" alt="Capricorn" style="width:90px;height:90px;">
+          <span>Capricorn</span>
+          <div class="zodiac-period">Dec 22 - Jan 19</div>
+        </div>
+        <div class="zodiac-card" title="Aquarius: Innovative, independent, and visionary.">
+          <img src="images/images/aquaris.jpeg" alt="Aquarius" style="width:90px;height:90px;">
+          <span>Aquarius</span>
+          <div class="zodiac-period">Jan 20 - Feb 18</div>
+        </div>
+        <div class="zodiac-card" title="Pisces: Empathetic, dreamy, and artistic.">
+          <img src="images/images/pisces.jpeg" alt="Pisces" style="width:90px;height:90px;">
+          <span>Pisces</span>
+          <div class="zodiac-period">Feb 19 - Mar 20</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔍 Features Section -->
   <section class="features">
     <div class="feature-card">
       <h3>📈 Smart Stock Analytics</h3>
@@ -88,7 +165,28 @@
     <p>&copy; 2025 AstroStocks. All rights reserved.</p>
   </footer>
 
-  <script src="js\home.js"></script>
+  <script src="js/home.js"></script>
+  <script>
+    // Show Login/Logout based on user status
+    document.addEventListener("DOMContentLoaded", function () {
+      const loginLink = document.getElementById("login-link");
+      const logoutLink = document.getElementById("logout-link");
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        loginLink.style.display = "none";
+        logoutLink.style.display = "inline-block";
+        logoutLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          localStorage.removeItem("loggedInUser");
+          alert("You have been logged out.");
+          window.location.reload();
+        });
+      } else {
+        loginLink.style.display = "inline-block";
+        logoutLink.style.display = "none";
+      }
+    });
+  </script>
 </body>
-</html>
 
+</html>

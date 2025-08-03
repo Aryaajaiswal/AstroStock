@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AstroStocks - Prediction Results</title>
-  <link rel="stylesheet" href="css\result_page.css"/>
+  <link rel="stylesheet" href="css\result_page.css" />
 </head>
+
 <body>
-  <header>
-    <h1>🔮 AstroStocks</h1>
-    <p>Where Astrology Meets Stock Predictions</p>
+  <header class="navbar">
+    <div class="logo">AstroStocks</div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="form.html">Predict</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <div id="authLink"></div>
+    </nav>
   </header>
+
 
   <main>
     <section class="result-card">
@@ -35,7 +44,7 @@
 
     <section class="chart">
       <h2>📉 Stock Trend (Sample)</h2>
-      <img src="chart-placeholder.png" alt="Sample Stock Chart" width="100%"/>
+      <img src="chart-placeholder.png" alt="Sample Stock Chart" width="100%" />
     </section>
 
     <section class="tips">
@@ -54,5 +63,23 @@
   </footer>
 
   <script src="js\result_page.js"></script>
+  <script>
+    // Login/Logout toggle for navbar
+    const authLink = document.getElementById('authLink');
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (authLink) {
+      if (loggedInUser) {
+        authLink.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
+      } else {
+        authLink.innerHTML = '<a href="login.html">Login</a>';
+      }
+    }
+    function logout() {
+      localStorage.removeItem('loggedInUser');
+      alert('Logged out successfully!');
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
+
 </html>

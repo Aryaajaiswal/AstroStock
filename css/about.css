@@ -1,3 +1,76 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  background: #0f0f1a;
+  overflow-x: hidden;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.35;
+  background: url('images\images\bg.jpg') center center/cover no-repeat;
+  transition: opacity 0.5s, transform 0.5s;
+  will-change: opacity, transform;
+}
+
+/* Optional: fade in on load */
+.bg-image.loaded {
+  opacity: 0.45;
+}
+/* AstroStocks Navbar (matching home.html) */
+.navbar {
+  width: 100vw;
+  background: linear-gradient(90deg, #4b2991 0%, #1e0c3d 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  box-shadow: 0 2px 12px rgba(80, 80, 160, 0.10);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-family: 'Orbitron', 'Roboto', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover {
+  background: rgba(255,255,255,0.12);
+  color: #e0e7ff;
+  text-decoration: none;
+}
+.about-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-header p {
+  color: #e6e3ec;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: auto;
+}
 * {
   margin: 0;
   padding: 0;
