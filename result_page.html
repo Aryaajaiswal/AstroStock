@@ -5,7 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AstroStocks - Prediction Results</title>
-  <link rel="stylesheet" href="css\result_page.css" />
+  <style>
+    body {
+      background-image: url(' images/images/bg.jpg'); 
+    }
+  </style>
+  <link rel="stylesheet" href="css/result_page.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,36 +27,36 @@
     </nav>
   </header>
 
-
   <main>
     <section class="result-card">
       <h2>📊 Stock Prediction Summary</h2>
-      <p><strong>Prediction:</strong> <span id="prediction">Buy 📈</span></p>
-      <p><strong>Confidence:</strong> <span id="confidence">78%</span></p>
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+      <p><strong>Stock:</strong> <span id="stock"></span></p>
+      <p><strong>Prediction:</strong> <span id="prediction"></span></p>
+      <p><strong>Confidence:</strong> <span id="confidence"></span></p>
     </section>
 
     <section class="horoscope">
       <h2>♐ Zodiac Insight</h2>
-      <p><strong>Sign:</strong> <span id="zodiac">Sagittarius</span></p>
-      <p id="zodiacInsight">Today's energy aligns with financial growth. Favorable for calculated risks.</p>
+      <p><strong>Sign:</strong> <span id="zodiac"></span></p>
+      <p id="zodiacInsight"></p>
     </section>
 
     <section class="planetary">
       <h2>🪐 Planetary Influences</h2>
-      <ul id="planetaryList">
-        <li>Mercury trine Jupiter - Good communication & judgment</li>
-        <li>Moon in Taurus - Stability in financial decisions</li>
-      </ul>
+      <ul id="planetaryList"></ul>
     </section>
 
     <section class="chart">
       <h2>📉 Stock Trend (Sample)</h2>
-      <img src="chart-placeholder.png" alt="Sample Stock Chart" width="100%" />
+      <p><i>Comming Soon!!</i></p>
+      <!-- <img src="images/chart-placeholder.png" alt="Sample Stock Chart" width="100%" /> -->
     </section>
 
     <section class="tips">
       <h2>💡 Expert Tip</h2>
-      <p id="expertTip">Combine astrological timing with market signals for optimized investment decisions.</p>
+      <p id="expertTip"></p>
     </section>
 
     <div class="actions">
@@ -62,24 +69,8 @@
     <p>&copy; 2025 AstroStocks</p>
   </footer>
 
-  <script src="js\result_page.js"></script>
-  <script>
-    // Login/Logout toggle for navbar
-    const authLink = document.getElementById('authLink');
-    const loggedInUser = localStorage.getItem('loggedInUser');
-    if (authLink) {
-      if (loggedInUser) {
-        authLink.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
-      } else {
-        authLink.innerHTML = '<a href="login.html">Login</a>';
-      }
-    }
-    function logout() {
-      localStorage.removeItem('loggedInUser');
-      alert('Logged out successfully!');
-      window.location.href = 'login.html';
-    }
-  </script>
+  <script src="js/stars.js"></script>
+  <script src="js/result_page.js"></script>
 </body>
 
 </html>

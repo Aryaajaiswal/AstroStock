@@ -1,0 +1,63 @@
+{
+  "zodiacInsights": {
+    "Aries": "Your bold Aries energy suggests taking decisive action in volatile markets. Focus on high-growth tech stocks.",
+    "Taurus": "Taurus stability favors long-term investments with steady growth. Consider blue-chip stocks for security.",
+    "Gemini": "Gemini's adaptability shines in diverse portfolios. Explore emerging markets for quick gains.",
+    "Cancer": "Your intuitive Cancer nature seeks secure investments. Bonds and real estate align with your energy.",
+    "Leo": "Leo's confidence drives investment in high-profile stocks. Lead the market with bold choices.",
+    "Virgo": "Virgo's analytical skills excel in research-driven strategies. Dive into data-heavy sectors like healthcare.",
+    "Libra": "Libra's balance seeks harmony in ethical investments. Green energy stocks resonate with your values.",
+    "Scorpio": "Scorpio's intensity thrives in high-stakes opportunities. Consider transformative industries like biotech.",
+    "Sagittarius": "Your adventurous Sagittarius spirit pursues global markets. International stocks are your playground.",
+    "Capricorn": "Capricorn's discipline focuses on steady growth. Invest in established financial institutions.",
+    "Aquarius": "Aquarius's innovation targets tech and unconventional markets. Cryptocurrencies may spark your interest.",
+    "Pisces": "Pisces's intuition aligns with value-driven investments. Creative industries like media are favorable."
+  },
+  "planetaryInfluences": [
+    {
+      "alignment": "Mercury trine Jupiter",
+      "description": "Good communication and judgment. Ideal for negotiating deals or researching market trends."
+    },
+    {
+      "alignment": "Moon in Taurus",
+      "description": "Stability in financial decisions. Focus on long-term investments with predictable returns."
+    },
+    {
+      "alignment": "Venus square Mars",
+      "description": "Passionate but risky energy. Avoid impulsive trades; seek balanced opportunities."
+    },
+    {
+      "alignment": "Sun conjunct Saturn",
+      "description": "Discipline and structure. Perfect for planning and conservative investment strategies."
+    },
+    {
+      "alignment": "Jupiter sextile Pluto",
+      "description": "Transformative growth potential. Explore opportunities in emerging sectors."
+    }
+  ],
+  "expertTips": [
+    "Combine astrological timing with market signals for optimized investment decisions.",
+    "Leverage lunar cycles to time your trades for maximum impact.",
+    "Align your portfolio with planetary transits to capture market momentum.",
+    "Use Mercury retrograde periods for reviewing and refining your investment strategy.",
+    "Tap into Jupiter's expansive energy for bold, growth-oriented investments."
+  ],
+  "stockPredictions": {
+    "AAPL": { "prediction": "Buy", "confidence": 82 },
+    "GOOGL": { "prediction": "Hold", "confidence": 75 },
+    "MSFT": { "prediction": "Buy", "confidence": 80 },
+    "TSLA": { "prediction": "Sell", "confidence": 70 },
+    "AMZN": { "prediction": "Buy", "confidence": 85 },
+    "META": { "prediction": "Hold", "confidence": 72 },
+    "NFLX": { "prediction": "Sell", "confidence": 68 },
+    "NVDA": { "prediction": "Buy", "confidence": 88 },
+    "JPM": { "prediction": "Hold", "confidence": 76 },
+    "DIS": { "prediction": "Buy", "confidence": 79 },
+    "TATASTEEL": { "prediction": "Sell", "confidence": 65 },
+    "RELIANCE": { "prediction": "Buy", "confidence": 81 },
+    "INFY": { "prediction": "Hold", "confidence": 74 },
+    "HDFCBANK": { "prediction": "Buy", "confidence": 83 },
+    "ICICIBANK": { "prediction": "Hold", "confidence": 77 },
+    "Other": { "prediction": "Hold", "confidence": 70 }
+  }
+}
