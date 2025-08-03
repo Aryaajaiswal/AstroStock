@@ -7,6 +7,5 @@ Prediction Form
 Dashboard
 <img width="1366" height="830" alt="image" src="https://github.com/user-attachments/assets/6713032e-1a62-467f-86ff-25a8a230b46c" />
 
-About
-<img width="1366" height="830" alt="image" src="https://github.com/user-attachments/assets/f0515bc9-1ca8-44d3-824c-c26e47517a5a" />
+
 
