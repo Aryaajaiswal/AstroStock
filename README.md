@@ -419,9 +419,8 @@ For questions, feedback, or support, please reach out to the development team or
 **Project Repository**: [AstroStock on GitHub](https://github.com/Aryaajaiswal/AstroStock)
 
 **Connect With Us**:
-- 📧 Email: [Your Email]
-- 🐦 Twitter: [Your Twitter]
-- 💼 LinkedIn: [Your LinkedIn]
+- 📧 Email: aryaajaiswal75@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/aryaa-jaiswal-7n
 
 ---
 
